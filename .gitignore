@@ -16,7 +16,8 @@ dist-ssr
 .env
 .env.*
 !.env.example
-.netlify
+# test-only, no secrets: points the e2e build at the local API
+!.env.e2e
 
 # Editor directories and files
 .vscode/*
@@ -28,3 +29,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Playwright
+test-results
+playwright-report
